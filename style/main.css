@@ -18,7 +18,7 @@ header {
 h1 {
   font-family: "LXGW WenKai TC", sans-serif;
   font-style: normal;
-  color: var(--light);
+  color: #6b57ff;
   font-weight: 700;
 }
 
@@ -67,6 +67,10 @@ h1 {
 
 .subtitle_aquamarine {
   color: var(--accent-aquamarine);
+}
+
+.redstone {
+  color: red;
 }
 
 
