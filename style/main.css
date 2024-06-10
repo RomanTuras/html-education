@@ -2,6 +2,30 @@
   --light: #fefefe;
   --bg-color: #010000;
   --accent-aquamarine: #07d8b9;
+  --accent-purple: #6b57ff;
+  --accent-red: #ff0000;
+  --accent-pink: #f31199;
+}
+
+.accent_red {
+  color: var(--accent-red);
+}
+
+.accent_aquamarine {
+  color: var(--accent-aquamarine);
+}
+
+.accent_purple {
+  color: var(--accent-purple);
+}
+
+.accent_pink {
+  color: var(--accent-pink);
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
 }
 
 body {
@@ -18,7 +42,7 @@ header {
 h1 {
   font-family: "LXGW WenKai TC", sans-serif;
   font-style: normal;
-  color: #6b57ff;
+  color: var(--accent-purple);
   font-weight: 700;
 }
 
@@ -46,10 +70,8 @@ h1 {
 .navbar__menu_item {
   font-family: "LXGW WenKai TC", sans-serif;
   font-weight: 300;
-  font-style: normal;
   font-size: 20px;
   color: var(--light);
-  text-decoration: none;
   padding: 0 12px;
   opacity: .6;
 }
@@ -65,12 +87,44 @@ h1 {
   color: var(--light);
 }
 
-.subtitle_aquamarine {
-  color: var(--accent-aquamarine);
+.subtitle_link:hover {
+  color: var(--light);
 }
 
-.redstone {
-  color: red;
+.subtitle a.accent_purple:hover {
+  svg.team_icon {
+    fill: var(--light);
+  }
+}
+
+.subtitle a.accent_pink:hover {
+  svg.buisneses_icon {
+    fill: var(--light);
+  }
+}
+
+.subtitle a {
+  white-space: nowrap;
+}
+
+.buisneses_icon {
+  fill: var(--accent-pink);
+  height: 32px;
+  width: 32px;
+  position: relative;
+  top: 5px;
+}
+
+.team_icon {
+  fill: var(--accent-purple);
+  height: 32px;
+  width: 32px;
+  position: relative;
+  top: 5px;
+}
+
+.subtitle span {
+  display: flex;
 }
 
 
@@ -80,7 +134,7 @@ h1 {
 @media only screen and (max-width: 600px) {
   
   .container {
-    width: 320px;
+    width: 290px;
   }
 
   h1 {
